@@ -13,12 +13,14 @@ import Admin from "./admin/admin";
 import Addadmin from "./admin/addadmin";
 import Editadmin from "./admin/editadmin";
 
+import Header from "./header/header";
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          
+          <Header/>
           <Route path="/home" element={<Home />} />
           <Route path="/alumnos" element={<Alumnos />} />
           <Route path="/Addalumnos" element={<Addalumnos />} />
